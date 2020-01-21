@@ -1,5 +1,5 @@
 /**
- * REST Api for test of Toolbox Company
+ * REST Api for test of Toolbox Company.
  * @author Javier Stifano
  */
 'use strict'; 
@@ -30,3 +30,5 @@ server.use(apiEndpoint, textRoute);
 server.listen(port, () => {
     console.log(`Server running on port: ${port}`);
 });
+
+module.exports = server;
