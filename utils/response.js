@@ -8,7 +8,7 @@
  */
 const craftOkResponseObj = (data, code) => {
     if(!data) data = {};
-    return { data: data, statusCode: code };
+    return { text: data, statusCode: code };
 }
 /**
  * Servicio para manejar respuestas dinámicas de error 
