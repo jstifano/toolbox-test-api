@@ -12,7 +12,7 @@ const returnText = async (req, res) => {
     if(!req.body.text) {
         return res.status(400).json(ResponseService.craftErrorResponseObj('Texto no enviado', 400));    
     } else if(!ValidationService.validateOnlyLetters(req.body.text)) {
-        return res.status(400).json(ResponseService.craftErrorResponseObj('Paramátro inválido', 400));
+        return res.status(400).json(ResponseService.craftErrorResponseObj('Parámetro inválido', 400));
     }
     else {
         return res.status(200).json(ResponseService.craftOkResponseObj(req.body.text, 200));
