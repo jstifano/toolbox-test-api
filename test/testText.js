@@ -10,7 +10,7 @@ describe('POST /api/text', () => {
         .post('/api/text')
         .send({text: 'Hola javier'})
         .expect(200, {
-            data: 'Hola javier',
+            text: 'Hola javier',
             statusCode: 200
         }, done)
     });
@@ -32,7 +32,7 @@ describe('POST /api/text', () => {
         .post('/api/text')
         .send({text: 'kjqw__#-?'})
         .expect(400, {
-            msg: 'Paramátro inválido',
+            msg: 'Parámetro inválido',
             statusCode: 400
         }, done)
     });
